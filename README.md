@@ -2,19 +2,29 @@ set up nodes via tmux:
 ./All_node.sh
 
 make wallets (as many as you want, 3  for 2/3 multisig + 1 other normal wallet to recive payment from multisig):
+
 ./wallet_setup/1_mk-cli-wallet.sh
+
 ./wallet_setup/2_mk-cli-wallet.sh
+
 ./wallet_setup/3_mk-cli-wallet.sh
+
 ./wallet_setup/4_mk-cli-wallet.sh
+
 
 when wallet opens, run this each time to stop locking:
 set inactivity-lock-timeout 0
 
 start wallets:
+
 ./1_walletStart.sh
+
 ./2_walletStart.sh
+
 ./3_walletStart.sh
+
 ./4_walletStart.sh
+
 
 2 and 3 share node by default
 
